@@ -1,28 +1,28 @@
-import { DropdownOption } from '../Dropdown';
-import { Container } from './styles';
+import { DropdownOption } from "../Dropdown";
+import { Products, Developers, Company } from '../Content';
+import { Container, DropdownStyles } from "./styles";
 
 function Navbar() {
   return (
-    <Container>
-      <ul>
-        <li>
-          <DropdownOption
-            name="Products"
-            content={()=><h1>Produtos</h1>}/>
-        </li>
-        <li>
-          <DropdownOption
-            name="Developers"
-            content={()=><h1>Desenvolvedores</h1>}/>
-        </li>
-        <li>
-          <DropdownOption
-            name="Company"
-            content={()=><h1>Empresa</h1>}/>
-        </li>
-      </ul>
-    </Container>
-  )
+    <DropdownStyles>
+      <Container>
+        <ul>
+          <li>
+            <DropdownOption name="Products" content={Products} />
+          </li>
+          <li>
+            <DropdownOption
+              name="Developers"
+              content={Developers}
+            />
+          </li>
+          <li>
+            <DropdownOption name="Company" content={Company} />
+          </li>
+        </ul>
+      </Container>
+    </DropdownStyles>
+  );
 }
 
 export default Navbar;

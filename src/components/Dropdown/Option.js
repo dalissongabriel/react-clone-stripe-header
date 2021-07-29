@@ -1,5 +1,5 @@
 export function DropdownOption({ name, content: Content }) {
   return (
-    <button>{name}</button>
+    <button className="dropdown-option">{name}</button>
   )
 }
