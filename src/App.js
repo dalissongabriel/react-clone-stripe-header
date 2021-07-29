@@ -1,6 +1,14 @@
+import { Layout } from "./components/Layout";
+import GlobalStyles from "./styles/globalStyles";
+
 function App() {
   return (
-    <div>Rocketseat</div>
+    <>
+      <Layout>
+        <h1>Rocketseat</h1>
+      </Layout>
+      <GlobalStyles/>
+    </>
   );
 }
 
