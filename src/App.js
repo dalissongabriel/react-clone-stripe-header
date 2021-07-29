@@ -1,11 +1,12 @@
 import { Layout } from "./components/Layout";
+import Navbar from "./components/Navbar";
 import GlobalStyles from "./styles/globalStyles";
 
 function App() {
   return (
     <>
       <Layout>
-        <h1>Rocketseat</h1>
+        <Navbar/>
       </Layout>
       <GlobalStyles/>
     </>
